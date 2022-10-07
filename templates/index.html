@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DEMO - Form with two submit buttons using HTML5</title>
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <h1>Registration</h1>
+           
+        <form action="register.php" method="post" id="register">
+            <label for="username">Username</label>
+            <input id="username" type="text" pattern="[A-Za-z]+[0-9]{0,2}" placeholder="No twitter spamhandles" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+
+            <span id="membership-type">
+                <label for="free">Free</label>
+                <input id="free" type="radio" name="membership" value="free">
+
+                <label for="paid">Paid</label>
+                <input id="paid" type="radio" name="membership" value="paid">
+            </span>
+
+            <input id="submit" type="submit" value="Join">
+        </form>
+    </body>
+    </html>
